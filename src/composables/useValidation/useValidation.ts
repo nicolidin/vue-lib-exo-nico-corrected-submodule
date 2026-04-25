@@ -37,7 +37,7 @@ export function useValidation<T extends ZodSchema>(schema: T, dataRef: Ref<unkno
 
   // À appeler au submit. Marque qu'on a validé au moins une fois et retourne true si les données passent le schéma.
   // En cas de succès, on repasse hasValidatedOnce à false pour que le formulaire reset n'affiche plus d'erreurs.
-  function validate(): data is z.infer<T> {
+  function validate(): boolean {
     hasValidatedOnce.value = true;
     const ok = schema.safeParse(dataRef.value).success;
     if (ok) hasValidatedOnce.value = false;

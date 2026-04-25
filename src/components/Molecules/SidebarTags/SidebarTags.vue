@@ -122,6 +122,7 @@ const allTagsWithDefault = computed(() => {
   const allNotesTag = {
     libelleName: ALL_NOTES_TAG,
     isSelected: isAllNotesSelected.value,
+    color: '#9E9E9E',
   };
   
   return [allNotesTag, ...filteredTags.value];
