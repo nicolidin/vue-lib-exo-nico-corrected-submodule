@@ -103,8 +103,10 @@ function handleCancel() {
     display: block;
     margin-bottom: $spacing-12;
     @include typo-body();
-    font-weight: 500;
-    color: rgba(var(--v-theme-on-surface), 0.87);
+    & {
+      font-weight: 500;
+      color: rgba(var(--v-theme-on-surface), 0.87);
+    }
   }
 }
 </style>

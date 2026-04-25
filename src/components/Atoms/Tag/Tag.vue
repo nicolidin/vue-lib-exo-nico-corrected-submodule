@@ -47,9 +47,9 @@ const props = withDefaults(
   }
 
   &__name {
-    @include typo-body;
     color: rgba(var(--v-theme-on-surface), 0.87);
     white-space: nowrap;
+    @include typo-body;
   }
 }
 </style>

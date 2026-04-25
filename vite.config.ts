@@ -8,7 +8,7 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `
-        @use "src/styles/vue-lib-exo-corrected.scss" as *;
+        @use "src/styles/sfc-scss-prelude.scss" as *;
         `,
       },
     },

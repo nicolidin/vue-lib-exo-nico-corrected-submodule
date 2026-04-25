@@ -51,8 +51,8 @@ function handleUpdate(value: boolean) {
 <style scoped lang="scss">
 .modal-layout {
   &__title {
-    @include typo-heading-05();
     padding: $spacing-16 $spacing-24;
+    @include typo-heading-05();
   }
 
   &__content {
